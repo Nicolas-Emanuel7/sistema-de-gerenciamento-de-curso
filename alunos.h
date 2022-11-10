@@ -10,7 +10,9 @@
  
  Lista* lista_cria();
 
- 
  Alunos* realizar_matricula(void);
+
+ Lista* inserir_matricula(Lista* Lista_matricula, Alunos* nome);
+
 
 #endif

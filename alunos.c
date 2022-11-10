@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include "alunos.h"
 
-
 	struct alunos{
 		char nome[100];
 		int matricula;
@@ -14,17 +13,15 @@
 		Alunos* info;
 		struct lista* next;
 	};
-	
-	Lista* lista_cria(){
-		return NULL;
-	}
+
+    
 	 
 	  Alunos* realizar_matricula(void){
 	  	
 		   Alunos* alunos = (Alunos*)malloc(sizeof(Alunos));
 		   
 		   printf("digite seu nome\n");
-		   scanf("%[^\n]", alunos->nome);
+		   scanf("%s", alunos->nome);
 		   printf("\n");
 		   
 		   printf("digite sua matricula\n");
@@ -32,7 +29,7 @@
 		   printf("\n");
 		   
 		   printf("digite o curso que deseja\n");
-		   scanf("%[^\n]", alunos->curso);
+		   scanf("%s", alunos->curso);
 		   printf("\n");
 		   
 		   printf("digite sua nota\n");

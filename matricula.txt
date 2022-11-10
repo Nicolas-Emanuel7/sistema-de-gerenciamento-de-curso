@@ -1,0 +1,15 @@
+nome: nicolas
+ curso: ]
+ matricula 55
+ nota: 1.000000
+
+nome: nicolas
+ curso: t
+ matricula 11
+ nota: 10.000000
+
+nome: nicolas
+ curso: popa
+ matricula 11
+ nota: 10.000000
+

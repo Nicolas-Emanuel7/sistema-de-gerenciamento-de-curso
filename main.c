@@ -64,6 +64,8 @@ void ApresentaMenu(int nItens, int menorOpcao, ...) {
 
 int main(void) {
     unsigned char op;
+    Lista* Lista_matricula = NULL;
+    int 
 
     unsigned int saida = 0;
 
@@ -78,51 +80,40 @@ int main(void) {
             case OPCAO1:
                 Beep(1000,500); /* Emite um beep */
                 Alunos* alunos = realizar_matricula();
-                
+                inserir_matricula(Lista_matricula, alunos );
                 break;
 
-            case OPCAO2:
+            /*case OPCAO2:
                 Beep(1000,500);
                 Lista* lista_retira(Lista* l, Alunos a)
                 
-                break;
+                break; 
 
             case OPCAO3:
                 Beep(1000,500);
-                Alunos* alunos = listar_matriculados();
+
+                Lista_listar(Lista* lista_matricula);
                 
                 break;
 
             case OPCAO4:
                 Beep(1000,500);
-                inteiro1 = LeInteiro();
-                inteiro2 = LeInteiro();
-                printf("%d / %d = %d\n", inteiro1, inteiro2,
-                       inteiro1 / inteiro2);
+                
                 break;
                 
             case OPCAO5:
                 Beep(1000,500);
-                inteiro1 = LeInteiro();
-                inteiro2 = LeInteiro();
-                printf("%d / %d = %d\n", inteiro1, inteiro2,
-                       inteiro1 / inteiro2);
+                
                 break;
                 
             case OPCAO6:
                 Beep(1000,500);
-                inteiro1 = LeInteiro();
-                inteiro2 = LeInteiro();
-                printf("%d / %d = %d\n", inteiro1, inteiro2,
-                       inteiro1 / inteiro2);
+                
                 break;
                 
             case OPCAO7:
                 Beep(1000,500);
-                inteiro1 = LeInteiro();
-                inteiro2 = LeInteiro();
-                printf("%d / %d = %d\n", inteiro1, inteiro2,
-                       inteiro1 / inteiro2);
+                
                 break;
 			*/
 			case OPCAO8:

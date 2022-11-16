@@ -4,14 +4,14 @@
 #include <string.h>
 #include <stdlib.h>
 
- typedef struct alunos Alunos;
- 
- typedef struct lista Lista;
- 
  Lista* lista_cria();
 
  Alunos* realizar_matricula(void);
 
  Lista* inserir_matricula(Lista* Lista_matricula, Alunos* nome);
+
+ Lista* Lst_listar(Lista* lista_matricula);
+ 
+ Lista* exibe_matricula(Alunos* Lista_matricula);
 
 #endif

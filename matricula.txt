@@ -14,3 +14,31 @@ nome: anabel
  matricula 7372400
  nota: 0,00
 
+nome: nicolas
+ matricula 1998224
+ nota: 0,00
+
+nome: nicolas
+ matricula 13008272
+ nota: 0,00
+
+nome: anabel
+ matricula 13008496
+ nota: 0,00
+
+nome: nicolas
+ matricula 7306640
+ nota: 0,00
+
+nome: Nicolas
+ matricula 11107728
+ nota: 0,00
+
+nome: Isadora
+ matricula 11107952
+ nota: 0,00
+
+nome: Ytalo
+ matricula 11108176
+ nota: 0,00
+

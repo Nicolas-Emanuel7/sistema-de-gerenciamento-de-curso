@@ -18,7 +18,7 @@ void LimpaBuffer(void) {
     } while ((valorLido != '\n') && (valorLido != EOF));
 }
 
-	  Alunos* realizar_matricula(void){
+Alunos* realizar_matricula(void){
 	  	
 		   Alunos* alunos = (Alunos*)malloc(sizeof(Alunos));
 		   

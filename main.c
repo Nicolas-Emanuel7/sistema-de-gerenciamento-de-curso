@@ -58,8 +58,8 @@ void ApresentaMenu(int nItens, int menorOpcao, ...) {
 int main(void) {
     unsigned char op;
     setlocale(LC_ALL,"");
-    Curso bti = (Curso)malloc(sizeof(Curso));
-    Curso cet = (Curso)malloc(sizeof(Curso));
+    Curso *bti = (Curso*)malloc(sizeof(Curso));
+    Curso *cet = (Curso*)malloc(sizeof(Curso));
     bti->lista_de_alunos = NULL;
     cet->lista_de_alunos = NULL;
     

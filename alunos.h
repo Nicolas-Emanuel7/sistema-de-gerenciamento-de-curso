@@ -1,17 +1,8 @@
 #ifndef ALUNOS_H
 #define ALUNOS_H
-#include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+#include "alunos.c"
 
- Lista* lista_cria();
-
- Alunos* realizar_matricula(void);
-
- Lista* inserir_matricula(Lista* Lista_matricula, Alunos* nome);
-
- Lista* Lst_listar(Lista* lista_matricula);
- 
- Lista* exibe_matricula(Alunos* Lista_matricula);
+typedef struct alunos Alunos;
 
 #endif

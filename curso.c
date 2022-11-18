@@ -12,7 +12,7 @@ typedef struct curso{
 }Curso;
 
 void LimpaBuffer(void) {
-    int valorLido; /* valorLido deve ser int! */
+    int valorLido;
     do {
         valorLido = getchar();
     } while ((valorLido != '\n') && (valorLido != EOF));
@@ -52,7 +52,7 @@ Alunos* realizar_matricula(void){
     void inserir_matricula(Alunos *novo_aluno, Curso *curso){
             
             if(curso->vagas == 0){
-                printf("\nNão há mais vagas no curso de %s", curso->nome);              
+                printf("\nNao há mais vagas no curso de %s", curso->nome);              
             }
 
             if(curso->lista_de_alunos == NULL){
@@ -71,7 +71,7 @@ Alunos* realizar_matricula(void){
 int remover(int mat, Curso *c){
 
     if(c->lista_de_alunos == NULL){
-        printf("\nNão existem pessoas matriculadas no curso\n");
+        printf("\nNao existem pessoas matriculadas no curso\n");
         return 0;
     }
 
@@ -91,7 +91,7 @@ int remover(int mat, Curso *c){
 
         i = i->next;
         if(i == NULL){
-            printf("\nMatricula não encontrada\n\n");
+            printf("\nMatricula nao encontrada\n\n");
             break;
         }
 
@@ -110,7 +110,7 @@ int remover(int mat, Curso *c){
 
 Alunos *busca(int mat, Curso *c){
     if(c->lista_de_alunos == NULL){
-        printf("\nNão existem pessoas matriculadas no curso");
+        printf("\nNao existem pessoas matriculadas no curso");
     
     }else if(c->lista_de_alunos != NULL){
     Alunos *i = (Alunos*)malloc(sizeof(Alunos));
@@ -118,7 +118,7 @@ Alunos *busca(int mat, Curso *c){
     while(i->matricula != mat){
         i = i->next;
         if(i == NULL){
-            printf("\nMatricula não encontrada\n\n");
+            printf("\nMatricula nao encontrada\n\n");
             break;
         }
     }

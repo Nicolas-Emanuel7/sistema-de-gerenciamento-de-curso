@@ -1,60 +1,16 @@
 nome: nicolas
- curso: ]
- matricula 55
- nota: 1.000000
+ matricula 12287376
+ nota: 0,00
+
+nome: anabel
+ matricula 12287600
+ nota: 0,00
 
 nome: nicolas
- curso: t
- matricula 11
- nota: 10.000000
+ matricula 7372176
+ nota: 0,00
 
-nome: nicolas
- curso: popa
- matricula 11
- nota: 10.000000
-
-nome: nicolas
- curso: cus
- matricula 77
- nota: 18.000000
-
-nome: nicolas
- curso: e
- matricula 8061120
- nota: -32118467477662335000.000000
-
-nome: nicolas
- curso: curso
- matricula 12
- nota: 10.000000
-
-nome: nicol
- curso: ll
- matricula 10
- nota: 11.000000
-
-nome: niol
- curso: [
- matricula 5
- nota: 8.000000
-
-nome: nio
- curso: ll
- matricula 4
- nota: 15.000000
-
-nome: mikael
- curso: jose
- matricula 2123131432
- nota: 9.800000
-
-nome: marcos
- curso: bti
- matricula 124141
- nota: 6.700000
-
-nome: n
- curso: n
- matricula -1163005939
- nota: -0.001327
+nome: anabel
+ matricula 7372400
+ nota: 0,00
 

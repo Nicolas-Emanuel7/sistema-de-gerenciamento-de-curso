@@ -46,13 +46,13 @@ int LeOpcao(int menorValor, int maiorValor) {
 void ApresentaMenu(int nItens, int menorOpcao, ...) {
     int i;
     va_list argumentos;
-    /* Inicia lista de argumentos vari�veis */
+
     va_start(argumentos, menorOpcao);
 
     for(i = 0; i < nItens; ++i) {
         printf("%c-%s\n", menorOpcao++, va_arg(argumentos, char *));
     }
-    va_end(argumentos);/* Encerra processamento de argumentos */
+    va_end(argumentos);
 }
 
 int main(void) {
@@ -82,7 +82,7 @@ int main(void) {
         op = LeOpcao(OPCAO1, OPCAO1 + N_OPCOES - 1);
         switch(op) {
             case OPCAO1:
-                Beep(1000,500); /* Emite um beep */
+                Beep(1000,500); 
                 int option;
                 Alunos* alunos;
                 printf("\nQual curso será realizado a matricula?");

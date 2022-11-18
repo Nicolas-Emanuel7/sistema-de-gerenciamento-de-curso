@@ -1,15 +1,9 @@
-/*#ifndef CURSO.H
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include "alunos.h"
+#include "curso.c"
 
- Lista* lista_cria();
-
- Alunos* realizar_matricula(void);
-
- Lista* inserir_matricula(Lista* Lista_matricula, Alunos* nome);
-
- void exibe_matricula(Alunos* Lista_matricula);
-
-#endif */
+typedef struct curso Curso;
+Alunos* realizar_matricula(void);
+void inserir_matricula(Alunos aluno, Curso lista);
+int editar(Curso *c);
+Alunos *busca(int mat, Curso *c);
+int remover(int mat, Curso *c);
+int imprime (Curso *c);

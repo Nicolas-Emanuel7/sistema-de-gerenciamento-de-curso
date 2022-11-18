@@ -142,3 +142,34 @@ if(aux == NULL){
     }
     return 1;
 }
+
+int editar(Curso *c){
+    int mat;
+
+    printf("\nInsira a matricula a ser editada: ");
+    scanf("%i", &mat);
+
+    Alunos *alunos = busca(mat,c);
+    if(alunos == NULL){
+        return 0;
+    }
+    printf("\nInsira o dados a serem editados na matricula:");
+    printf("\ndigite seu nome:");
+		   scanf(" %s", alunos->nome);
+		   printf("\n");
+		   
+		   printf("\ndigite sua matricula:");
+		   scanf("%d" , &alunos->matricula);
+		   printf("\n");
+		   
+		   printf("\ndigite o curso que deseja:");
+		   scanf(" %s", alunos->curso);
+		   printf("\n"); 
+		   
+		   printf("\ndigite sua nota:");
+		   scanf("%f" , &alunos->notas);
+	       printf("\n");
+
+    return 1;
+    
+}

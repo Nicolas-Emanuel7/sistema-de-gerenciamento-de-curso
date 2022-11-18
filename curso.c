@@ -49,7 +49,7 @@ void LimpaBuffer(void) {
     return alunos;
 	}
 
-	  void inserir_matricula(Alunos *novo_aluno, Curso *curso){
+    void inserir_matricula(Alunos *novo_aluno, Curso *curso){
             
             if(curso->vagas == 0){
                 printf("\nNão há mais vagas no curso de %s", curso->nome);              
@@ -67,8 +67,8 @@ void LimpaBuffer(void) {
                 curso->vagas--;
             }              
     }
-
-	int remover(int mat, Curso *c){
+    
+int remover(int mat, Curso *c){
 
     if(c->lista_de_alunos == NULL){
         printf("\nNão existem pessoas matriculadas no curso\n");
@@ -107,4 +107,38 @@ void LimpaBuffer(void) {
     }
     return 1;
 }
-	
+
+Alunos *busca(int mat, Curso *c){
+    if(c->lista_de_alunos == NULL){
+        printf("\nNão existem pessoas matriculadas no curso");
+    
+    }else if(c->lista_de_alunos != NULL){
+    Alunos *i = (Alunos*)malloc(sizeof(Alunos));
+    i = c->lista_de_alunos;
+    while(i->matricula != mat){
+        i = i->next;
+        if(i == NULL){
+            printf("\nMatricula não encontrada\n\n");
+            break;
+        }
+    }
+    return i;
+}
+    
+}
+
+int imprime (Curso *c){
+    Alunos *aux = c->lista_de_alunos;
+if(aux == NULL){
+    printf("\nAs matriculas estão vazias\n\n");
+    return 0;
+}
+    while(aux != NULL){
+        printf("\nNome: %s\nCurso: %s\nMatricula: %d\nNota: %.2f\n\n", aux->nome, aux->curso, aux->matricula, aux->notas);
+        aux = aux->next;
+        if(aux == NULL){
+            break;
+        }
+    }
+    return 1;
+}

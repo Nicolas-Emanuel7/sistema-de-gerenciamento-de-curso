@@ -65,7 +65,6 @@ void ApresentaMenu(int nItens, int menorOpcao, ...) {
 int main(void) {
     unsigned char op;
     Lista* Lista_matricula = NULL;
-    int 
 
     unsigned int saida = 0;
 
